@@ -93,9 +93,9 @@ More than 4 weeks
 สามารถเขียนเป็น pseudocode, flowchart idea หรือขั้นตอนความคิดได้
 
 ```text
-Step 1:
-Step 2:
-Step 3:
+Step 1:เขียนรับ input ข้อมูลโดยใช้ .lower เข้ามาด้วย
+Step 2:ทำการใช้ inverse string
+Step 3:เขียน print output ออกมา
 ```
 
 ---
@@ -115,7 +115,7 @@ Step 3:
 ห้ามคัดลอกคำอธิบายจากคนอื่น
 
 ```text
-
+เหมือนกันครับ เพราะว่า inverse string มันเป็นวิธีที่ง่ายที่สุดแล้วครับในการทำข้อนี้
 ```
 
 ---
@@ -135,31 +135,31 @@ Step 3:
 ทำไมเลือก case นี้:
 
 ```text
-
+เป็นการทดสอบว่าถ้าเราเขียนพิมพ์ใหญ่ไปมันจะแปลงออกมาเป็นพิมพ์เล็กแล้วสลับกันไหมครับ
 ```
 
 Input:
 
 ```text
-
+GAGAGAGA
 ```
 
 Expected output:
 
 ```text
-
+agagagag
 ```
 
 Actual output:
 
 ```text
-
+agagagag
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass
 ```
 
 ### Test Case 2
@@ -167,31 +167,31 @@ Pass / Not Pass
 ทำไมเลือก case นี้:
 
 ```text
-
+อยากลองที่จะรู้ว่าถ้าเกิดพิมพ์ใหญ่สลับกับพิมพ์เล็กมันจะเป็นยังไงครับ
 ```
 
 Input:
 
 ```text
-
+aPpLe
 ```
 
 Expected output:
 
 ```text
-
+elppa
 ```
 
 Actual output:
 
 ```text
-
+elppa
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass
 ```
 
 ### Test Case 3
