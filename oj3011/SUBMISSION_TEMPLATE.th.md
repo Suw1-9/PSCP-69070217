@@ -15,25 +15,25 @@
 หมายเลข/ชื่อโจทย์ OJ:
 
 ```text
-
+3011
 ```
 
 OJ submission ID ถ้ามีการส่งแล้ว:
 
 ```text
-
+54476
 ```
 
 สถานะ OJ:
 
 ```text
-Pass / Not Pass / Not Submit
+Pass
 ```
 
 เวลาที่ใช้คิดและทำโจทย์ด้วยตนเอง:
 
 ```text
-
+30-60 minutes
 ```
 
 เลือกหนึ่งข้อ:
@@ -73,7 +73,7 @@ More than 4 weeks
 ถ้ายังไม่เข้าใจโจทย์ทั้งหมด ให้เขียนสิ่งที่เข้าใจในตอนนี้ ความเข้าใจอาจยังไม่ครบหรืออาจผิดได้ แต่ต้องพยายามอธิบายอย่างจริงใจ
 
 ```text
-
+ตอนแรกเลยเราจะทำการรับค่า input มาสองตัว คือ color_1 ,color_2 พอหลังจากได้ input มาแล้วผมจะต่อด้วยการทำ If-else condition เป็นการเช็คค่าสีไม่ว่าจะเป็น Red Blue Yellow มาผสมกันและถ้าหากพิมพ์สีอื่นหรืออะไรอย่างอื่นที่นอกเหนือจากแม่สีนี้จะได้ว่า Error
 ```
 
 ---
@@ -93,9 +93,16 @@ More than 4 weeks
 สามารถเขียนเป็น pseudocode, flowchart idea หรือขั้นตอนความคิดได้
 
 ```text
-Step 1:
-Step 2:
-Step 3:
+Step 1:เขียนรับค่า input ออกมาก่อนทั้งสองตัวคือ color_1, color_2 และตามด้วย .capitalize เผื่อให้รับค่าเป็นตัวหน้าพิมพ์ใหญ่ออกมาเสมอ
+Step 2:หลังจากนั้นทำ if else condition
+Step 3:ใน if else condition เราจะให้ทำการเช็คสีและนำสีมารสมกัน
+Step 4:ทำการเขียน condition ออกมา เช่น "Red" + "Blue" ได้ "Violet"
+Step 5:ให้ทำการเขียนสลับด้วยให้สามารถรับค่าด้วยทั้งสองเช่น "Red" + "Blue" เป็น "Blue" + "Red"
+Step 6:ทำให้ครบทุกสีที่โจทย์กำหนด
+Step 7:หลังจากเขียนเสร็จให้ทำ if else อีก condition นึงคือตรวจว่า color_1 กับ color_2 เหมือนกันไหมถ้าหากเหมือนกันให้ตอบสีเดิม
+Step 8:สร้างอีก condition ที่ถ้าหากพิมพ์อะไรนอกเหนือจาก "Red" "Blue" "Yellow" จะให้ Error ออกมา
+Step 9:รันค่า Output ออกมา
+
 ```
 
 ---
@@ -115,7 +122,7 @@ Step 3:
 ห้ามคัดลอกคำอธิบายจากคนอื่น
 
 ```text
-
+เหมือนกัน เพราะ โจทย์อธิบายมาดีระดับแต่แค่โจทย์ลืมอธิบายการเอาสีเดียวกันมาผสมกันครับ
 ```
 
 ---
@@ -135,31 +142,32 @@ Step 3:
 ทำไมเลือก case นี้:
 
 ```text
-
+ฺทดสอบว่าถ้าหากพิมพ์ตัวเล็กไปแล้วยังจะได้ Output ออกมาตามที่ต้องการอยู่ไหม
 ```
 
 Input:
 
 ```text
-
+Blue
+yellow
 ```
 
 Expected output:
 
 ```text
-
+Green
 ```
 
 Actual output:
 
 ```text
-
+Green
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass
 ```
 
 ### Test Case 2
@@ -167,31 +175,32 @@ Pass / Not Pass
 ทำไมเลือก case นี้:
 
 ```text
-
+เป็นการทดสอบตัวพิมพ์ใหญ่ทั้งหมด
 ```
 
 Input:
 
 ```text
-
+ฺRED
+BLUE
 ```
 
 Expected output:
 
 ```text
-
+Violet
 ```
 
 Actual output:
 
 ```text
-
+Violet
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass
 ```
 
 ### Test Case 3
@@ -199,31 +208,32 @@ Pass / Not Pass
 ทำไมเลือก case นี้:
 
 ```text
-
+อยากลองพิมพ์มั่วๆออกมาให้เทสดูครับ
 ```
 
 Input:
 
 ```text
-
+fkdskf;lsdk
+fjdspjfsd;j
 ```
 
 Expected output:
 
 ```text
-
+Error
 ```
 
 Actual output:
 
 ```text
-
+Error
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass
 ```
 
 ---
@@ -233,13 +243,13 @@ Pass / Not Pass
 ใช้ AI กับโจทย์นี้หรือไม่
 
 ```text
-Yes / No
+No
 ```
 
 ถ้าใช้ AI ต้องทำไฟล์นี้ด้วย:
 
 ```text
-ai_reflection.md
+
 ```
 
 ถ้าถามเฉพาะเพื่อน TA หรือผู้สอน และไม่ได้ใช้ AI ไม่ต้องทำ `ai_reflection.md`
@@ -251,7 +261,7 @@ ai_reflection.md
 ได้ถามเพื่อน TA ผู้สอน หรือบุคคลอื่นเพื่อขอความช่วยเหลือในโจทย์นี้หรือไม่
 
 ```text
-Yes / No
+Yes
 ```
 
 ถ้าใช่ ให้อธิบายสั้น ๆ ว่าได้รับความช่วยเหลือแบบใด
@@ -276,19 +286,19 @@ Yes / No
 ใครช่วยคุณ
 
 ```text
-
+คุยเรื่อง test cases
 ```
 
 เขาช่วยอะไร
 
 ```text
-
+ยกตัวอย่าง test case บางอย่างที่ทำให้บางอ๋อ
 ```
 
 คุณยังทำอะไรด้วยตนเอง
 
 ```text
-
+ทำทุกอย่างครับ
 ```
 
 คุณคัดลอก code จากคนอื่นหรือไม่
@@ -305,10 +315,10 @@ No
 
 | Statement | Yes/No |
 |---|---|
-| I wrote this submission in my own words. | |
-| I understand my final code. | |
-| I recorded the real OJ status. | |
-| I did not copy AI-generated text directly into this file. | |
-| I did not copy code from another person. | |
-| If I received human help, I disclosed it in this file. | |
-| I submitted the final code to the OJ by myself. | |
+| I wrote this submission in my own words. |Yes|
+| I understand my final code. |Yes|
+| I recorded the real OJ status. |Yes|
+| I did not copy AI-generated text directly into this file. |Yes|
+| I did not copy code from another person. |Yes|
+| If I received human help, I disclosed it in this file. |Yes|
+| I submitted the final code to the OJ by myself. |Yes|
